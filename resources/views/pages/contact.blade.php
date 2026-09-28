@@ -157,7 +157,7 @@
                 <div>
                     <div class="card" style="border: 2px solid var(--color-primary-blue); box-shadow: var(--shadow-xl); padding: 2.75rem; background: #ffffff; position: sticky; top: 100px;">
                         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
-                            <span class="badge badge-red">Confidential &amp; Free</span>
+                            <span class="badge badge-accent">100% Free Consultation</span>
                             <span style="font-size: 0.8125rem; color: var(--color-text-muted); font-weight: 600;">No Win, No Fee</span>
                         </div>
                         <h2 style="font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem;">
@@ -180,7 +180,7 @@
         <div class="container">
             <div class="grid grid-3" style="gap: 2rem; text-align: center;">
                 <div class="card" style="align-items: center;">
-                    <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(220, 38, 38, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-accent-red); margin-bottom: 1rem;">
+                    <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(30, 58, 138, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary-blue); margin-bottom: 1rem;">
                         <x-icon name="scale" size="28" />
                     </div>
                     <h3 class="heading-sm" style="margin-bottom: 0.5rem; color: var(--color-primary);">No Win, No Fee Guarantee</h3>
@@ -200,10 +200,10 @@
                 </div>
 
                 <div class="card" style="align-items: center;">
-                    <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(217, 119, 6, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-accent); margin-bottom: 1rem;">
+                    <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(30, 58, 138, 0.1); display: flex; align-items: center; justify-content: center; color: var(--color-primary-blue); margin-bottom: 1rem;">
                         <x-icon name="lock" size="28" />
                     </div>
-                    <h3 class="heading-sm" style="margin-bottom: 0.5rem; color: var(--color-primary);">100% Confidential Review</h3>
+                    <h3 class="heading-sm" style="margin-bottom: 0.5rem; color: var(--color-primary);">Free Direct Case Review</h3>
                     <p style="font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.6; margin: 0;">
                         Your consultation is fully protected under attorney-client privilege. Your information remains completely secure.
                     </p>

@@ -2,7 +2,7 @@
 
 <div class="card" style="box-shadow: var(--shadow-xl); border: 1px solid var(--color-border);" id="contact-form">
     <div style="margin-bottom: 1.5rem;">
-        <span class="badge badge-red" style="margin-bottom: 0.5rem;">Confidential &amp; Free</span>
+        <span class="badge badge-accent" style="margin-bottom: 0.5rem;">100% Free Consultation</span>
         <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--color-primary);">Get Your Free Case Evaluation</h3>
         <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.25rem;">
             No fee unless we win. Fill out this form for an immediate callback from Adam L. Shapiro.
@@ -97,7 +97,7 @@
                 </button>
                 <div style="text-align: center; margin-top: 0.75rem; font-size: 0.75rem; color: var(--color-text-muted); display: flex; align-items: center; justify-content: center; gap: 0.35rem;">
                     <x-icon name="lock" size="14" />
-                    <span>100% Confidential. No attorney-client relationship is formed until a retainer is signed.</span>
+                    <span>Strictly Private &amp; Secure. No attorney-client relationship is formed until a retainer is signed.</span>
                 </div>
             </div>
         </div>

@@ -23,7 +23,7 @@
                     <span style="display: inline-block; font-size: 0.52em; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #D62828; border-bottom: 2px solid #D62828; padding-bottom: 0.25rem; margin-top: 0.5rem;">Fighting for You Since 1994</span>
                 </h1>
 
-                <p style="font-size: 1.125rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2.25rem; max-width: 620px;">
+                <p style="font-size: 1.125rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2.25rem; max-width: 620px; width: 100%; word-break: normal; overflow-wrap: break-word;">
                     When you're hit, we hit back harder. Adam L. Shapiro is the shield between you and the insurance giants. Over 25+ years of aggressive trial representation across New York City and Long Island. <strong>No fee unless we win your case.</strong>
                 </p>
 
@@ -39,18 +39,18 @@
                 </div>
 
                 {{-- Trust Stats Bar --}}
-                <div style="display: flex; gap: 2rem; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1.5rem; flex-wrap: wrap;">
+                <div class="hero-trust-stats" style="display: flex; gap: 2rem; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 1.5rem; flex-wrap: wrap;">
                     <div>
-                        <div style="font-size: 1.75rem; font-weight: 800; color: #ffffff; font-family: var(--font-heading);">$100M+</div>
-                        <div style="font-size: 0.8125rem; color: #94a3b8;">Recovered for Clients</div>
+                        <div class="stat-number" style="font-size: 1.75rem; font-weight: 800; color: #ffffff; font-family: var(--font-heading);">$100M+</div>
+                        <div class="stat-label" style="font-size: 0.8125rem; color: #94a3b8;">Recovered for Clients</div>
                     </div>
                     <div>
-                        <div style="font-size: 1.75rem; font-weight: 800; color: #ffffff; font-family: var(--font-heading);">25+ Years</div>
-                        <div style="font-size: 0.8125rem; color: #94a3b8;">Trial Experience</div>
+                        <div class="stat-number" style="font-size: 1.75rem; font-weight: 800; color: #ffffff; font-family: var(--font-heading);">25+ Years</div>
+                        <div class="stat-label" style="font-size: 0.8125rem; color: #94a3b8;">Trial Experience</div>
                     </div>
                     <div>
-                        <div style="font-size: 1.75rem; font-weight: 800; color: #ffffff; font-family: var(--font-heading);">$0 Upfront</div>
-                        <div style="font-size: 0.8125rem; color: #94a3b8;">No Win, No Fee Guarantee</div>
+                        <div class="stat-number" style="font-size: 1.75rem; font-weight: 800; color: #ffffff; font-family: var(--font-heading);">$0 Upfront</div>
+                        <div class="stat-label" style="font-size: 0.8125rem; color: #94a3b8;">No Win, No Fee Guarantee</div>
                     </div>
                 </div>
             </div>
@@ -65,10 +65,10 @@
                         <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff;">The Shapiro Shield</span>
                     </div>
                 </div>
-                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 440px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.75rem;">
-                    <div style="display: flex; align-items: center; gap: 0.625rem; min-width: 0;">
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 440px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.5rem; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; min-width: 0; flex-shrink: 1;">
                         <span class="badge badge-gold" style="white-space: nowrap; flex-shrink: 0;">Official Video</span>
-                        <span style="font-size: 0.875rem; color: #94a3b8; white-space: nowrap;">Adam L. Shapiro in Action</span>
+                        <span style="font-size: 0.875rem; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Adam L. Shapiro in Action</span>
                     </div>
                     <span style="font-size: 0.75rem; color: #cbd5e1; white-space: nowrap; flex-shrink: 0; background: rgba(255,255,255,0.08); padding: 0.25rem 0.6rem; border-radius: 4px;">HD &bull; Full Audio</span>
                 </div>
@@ -294,14 +294,14 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.75rem;">
             {{-- Pillar 1 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.1); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Licenses and Memberships</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
                     Attorney Shapiro holds multiple legal licenses and is an active member of respected legal associations.
                 </p>
-                <a href="{{ route('about') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+                <a href="{{ route('about') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
                     <span>Read More</span>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                 </a>
@@ -309,14 +309,14 @@
 
             {{-- Pillar 2 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(220, 38, 38, 0.1); color: var(--color-accent-red); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">High Profile Cases</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
                     The firm has handled numerous high-profile cases, demonstrating experience with complex litigation and media-sensitive legal matters.
                 </p>
-                <a href="{{ route('high-profiles-cases') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+                <a href="{{ route('high-profiles-cases') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
                     <span>Read More</span>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                 </a>
@@ -324,14 +324,14 @@
 
             {{-- Pillar 3 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(217, 119, 6, 0.1); color: var(--color-accent); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Philosophy</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
                     Shapiro Law Office operates on a client-first philosophy—offering aggressive representation, honest communication, and individualized legal strategies.
                 </p>
-                <a href="{{ route('services') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+                <a href="{{ route('services') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
                     <span>Read More</span>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                 </a>
@@ -339,14 +339,14 @@
 
             {{-- Pillar 4 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.1); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Institutional Clients</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
                     The firm serves corporate and institutional clients with long-term legal support, combining legal precision with dependable counsel.
                 </p>
-                <a href="{{ route('services') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+                <a href="{{ route('services') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
                     <span>Read More</span>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                 </a>
@@ -354,14 +354,14 @@
 
             {{-- Pillar 5 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(22, 163, 74, 0.1); color: #16a34a; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Always Accessible</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
                     Attorney Shapiro ensures clients can reach him directly, prioritizing availability and responsiveness.
                 </p>
-                <a href="{{ route('contact') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+                <a href="{{ route('contact') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
                     <span>Read More</span>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                 </a>
@@ -369,14 +369,14 @@
 
             {{-- Pillar 6 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(217, 119, 6, 0.1); color: var(--color-accent); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Confidence</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
                     Clients are encouraged to have full confidence in the firm’s ability, thanks to decades of experience, honest advice, and proven results.
                 </p>
-                <a href="{{ route('about') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+                <a href="{{ route('about') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
                     <span>Read More</span>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                 </a>
@@ -384,14 +384,14 @@
 
             {{-- Pillar 7 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(220, 38, 38, 0.1); color: var(--color-accent-red); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">No Recovery, No Attorney’s Fees!</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
                     Clients pay nothing unless the firm wins their case—reinforcing a strong commitment to justice and results.
                 </p>
-                <a href="{{ route('contact') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+                <a href="{{ route('contact') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
                     <span>Read More</span>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                 </a>
@@ -399,14 +399,14 @@
 
             {{-- Pillar 8 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.1); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">References and Recommendations</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
                     Positive client testimonials and peer endorsements reflect the firm’s reputation for effective advocacy and client satisfaction.
                 </p>
-                <a href="{{ route('about') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-accent-red); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+                <a href="{{ route('about') }}" style="font-size: 0.875rem; font-weight: 700; color: var(--color-primary-blue); text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
                     <span>Read More</span>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                 </a>
@@ -436,7 +436,7 @@
      ========================================================================= --}}
 <section class="section" style="background: #ffffff;">
     <div class="container">
-        <div class="responsive-two-col ratio-1-11" style="align-items: center; gap: 3.5rem;">
+        <div class="responsive-two-col" style="align-items: center; gap: 3.5rem;">
             <div>
                 <span class="section-subtitle">Excellence &amp; Advocacy</span>
                 <h2 class="heading-lg" style="margin-bottom: 1.25rem;">
@@ -458,11 +458,11 @@
                 </div>
             </div>
 
-            <div>
-                <div class="hero-reel-mockup" style="max-width: 440px; margin: 0 auto; box-shadow: var(--shadow-xl);">
-                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" poster="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" controls playsinline preload="metadata" style="width: 100%; border-radius: inherit; display: block;"></video>
+            <div style="display: flex; flex-direction: column; align-items: flex-end; width: 100%;">
+                <div style="width: 100%; max-width: 520px; border-radius: 24px; overflow: hidden; background: #000000; box-shadow: var(--shadow-xl); border: 2.5px solid rgba(0, 0, 0, 0.1); margin-left: auto;">
+                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" poster="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" controls playsinline preload="metadata" style="width: 100%; height: auto; display: block; border-radius: inherit;"></video>
                 </div>
-                <p style="text-align: center; font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.85rem; font-weight: 600;">
+                <p style="text-align: center; width: 100%; max-width: 520px; font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.85rem; font-weight: 600; margin-left: auto;">
                     Watch: What to do immediately after an injury in NYC
                 </p>
             </div>
@@ -1107,12 +1107,14 @@
             <button type="button" class="client-dot" data-index="5" aria-label="Slide 6"></button>
         </div>
 
-        {{-- Trust Rating Badges Pill (Google 4.9/5, Yelp Top Pro, AVVO Superb from Live Site) --}}
+        {{-- Trust Rating Badges Pill (Google 4.5/5, Yelp Top Pro, AVVO Superb from Live Site) --}}
         <div style="margin-top: 2.25rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
             <div style="display: inline-flex; align-items: center; gap: 0.6rem; background: #ffffff; border: 1.5px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.06); padding: 0.6rem 1.4rem; border-radius: 30px; color: #0f172a; font-weight: 700; font-size: 0.95rem;">
                 <img src="{{ asset('assets/media/clients/google-icon.png') }}" alt="Google" style="width: 20px; height: 20px; object-fit: contain;">
-                <span>Google 4.9/5</span>
-                <span style="color: #f59e0b; letter-spacing: 1px;">★★★★★</span>
+                <span>Google 4.5/5</span>
+                <span style="color: #f59e0b; display: inline-flex; align-items: center; gap: 1px; font-size: 1.05rem; line-height: 1;">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span style="position: relative; display: inline-block; width: 1em; color: #cbd5e1;">★<span style="position: absolute; left: 0; top: 0; width: 50%; overflow: hidden; color: #f59e0b;">★</span></span>
+                </span>
             </div>
 
             <div style="display: inline-flex; align-items: center; gap: 0.6rem; background: #ffffff; border: 1.5px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.06); padding: 0.6rem 1.4rem; border-radius: 30px; color: #0f172a; font-weight: 700; font-size: 0.95rem;">
@@ -1253,7 +1255,7 @@
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                         </div>
                         <div>
-                            <div style="font-size: 0.8125rem; color: var(--color-text-muted);">Confidential Email</div>
+                            <div style="font-size: 0.8125rem; color: var(--color-text-muted);">Direct Consultation Email</div>
                             <a href="mailto:adam@shapirolawoffice.com" style="font-size: 1.125rem; font-weight: 700; color: var(--color-primary);">adam@shapirolawoffice.com</a>
                         </div>
                     </div>

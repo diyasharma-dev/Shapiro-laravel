@@ -724,6 +724,13 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     gap: 3rem;
     align-items: center;
+    width: 100%;
+}
+
+.hero-grid > div {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -799,8 +806,43 @@ h1, h2, h3, h4, h5, h6 {
         height: 320px;
     }
     .hero-reel-mockup {
-        height: 480px;
-        max-width: 360px;
+        height: auto;
+        max-height: 480px;
+        max-width: min(340px, 100%);
+        aspect-ratio: 9 / 16;
+        width: 100%;
+    }
+    .hero-grid {
+        gap: 2.25rem;
+    }
+    .hero-section {
+        padding: 2.5rem 0 3.5rem 0;
+        overflow-x: hidden;
+    }
+    .hero-section p {
+        font-size: 1.05rem;
+        line-height: 1.65;
+    }
+    .hero-trust-stats {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 0.5rem !important;
+    }
+    .hero-trust-stats > div {
+        min-width: 0;
+    }
+    .hero-trust-stats .stat-number {
+        font-size: 1.35rem !important;
+    }
+    .hero-trust-stats .stat-label {
+        font-size: 0.72rem !important;
+        line-height: 1.25 !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .card {
+        padding: 1.5rem 1.25rem;
     }
 }
 
@@ -809,8 +851,10 @@ h1, h2, h3, h4, h5, h6 {
         height: 290px;
     }
     .hero-reel-mockup {
-        height: 440px;
+        height: auto;
+        max-height: 420px;
         max-width: 100%;
+        aspect-ratio: 9 / 16;
     }
 }
 
@@ -2068,7 +2112,7 @@ video.video-fluid {
     .split-section.split-form {
         grid-template-columns: 1fr 1.15fr;
         gap: 3.5rem;
-        align-items: start;
+        align-items: center;
     }
 
     .split-section.split-video {
@@ -3231,21 +3275,26 @@ a.blog-site-url:hover {
     letter-spacing: 0.05em;
 }
 
-/* Floating Stat Badge */
+/* Stat Highlight Card */
 .litigation-floating-stat {
-    position: absolute;
-    bottom: -1rem;
-    left: -1rem;
+    position: relative;
     background: #0f172a;
     color: #ffffff;
     padding: 1.15rem 1.5rem;
     border-radius: 16px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    z-index: 2;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.15rem;
+    width: fit-content;
+    max-width: 100%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.litigation-floating-stat:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.18);
 }
 
 .litigation-floating-stat .stat-num {
@@ -3341,14 +3390,9 @@ a.blog-site-url:hover {
         grid-template-columns: 1fr;
     }
     .litigation-floating-stat {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        margin-top: 0.5rem;
         width: 100%;
         justify-content: center;
-        text-align: center;
-        padding: 1.25rem 1.5rem;
+        padding: 1.15rem 1.25rem;
         border-radius: 16px;
         box-shadow: 0 10px 25px rgba(15, 23, 42, 0.2);
     }
