@@ -13,6 +13,11 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+        // Railway terminates TLS at the edge and forwards plain HTTP with
+        // X-Forwarded-Proto — trust it so asset()/route() emit https URLs.
+        // Without this, pages served over https contain http:// links which
+        // browsers block as mixed content (CSS/JS/images fail to load).
+        $middleware->trustProxies(at: '*');
         $middleware->web(append: [EnsureTrailingSlash::class]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
