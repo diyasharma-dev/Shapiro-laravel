@@ -60,9 +60,13 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
                     New York law gives injured victims the right to pursue full compensation from the party responsible. But that right has strict deadlines. It has complex procedural rules. And it requires proof that most people do not know how to build on their own.
                 </p>
-                <div style="padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 0 var(--radius-md) var(--radius-md) 0;">
+                <div style="padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 0 var(--radius-md) var(--radius-md) 0; margin-bottom: 1.5rem;">
                     <strong style="color: var(--color-primary); font-size: 1.1rem; display: block; margin-bottom: 0.25rem;">That is where we come in.</strong>
                     <p style="margin: 0; font-size: 0.95rem; color: var(--color-text);">We protect your rights from day one, ensuring no insurer takes advantage of your situation while you heal.</p>
+                </div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Free Injury Consultation &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
                 </div>
             </div>
         </div>
@@ -168,9 +172,13 @@
                     </div>
                 </div>
 
-                <p style="color: var(--color-text-muted); font-size: 0.95rem;">
+                <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
                     Each case type has its own legal nuances, statutory deadlines, and tactical requirements. We have mastered every single one.
                 </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-accent btn-lg">Discuss Your Specific Case &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) SHAPIRO</a>
+                </div>
             </div>
 
             <div>
@@ -273,9 +281,13 @@
                         "The first offer is almost never the right number. Adjusters are rewarded for paying as little as possible. We do not let that happen to you."
                     </p>
                 </div>
-                <p style="color: var(--color-text-muted); font-size: 0.95rem;">
+                <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
                     <strong>Serving All Five Boroughs and Long Island:</strong> Queens (Forest Hills, Flushing, Jamaica, Astoria), Brooklyn, Manhattan, The Bronx, Staten Island, and Nassau County.
                 </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                    <a href="{{ route('contact') }}" class="btn btn-primary btn-lg">Put Adam On Your Side &rarr;</a>
+                    <a href="tel:+19707427476" class="btn btn-outline btn-lg">Call (970) 742-7476</a>
+                </div>
             </div>
 
             <div>

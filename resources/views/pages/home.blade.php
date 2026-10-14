@@ -57,20 +57,16 @@
 
             {{-- Right Column: Featured Video Reel --}}
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(11, 27, 61, 0.9); backdrop-filter: blur(8px); border: 1.5px solid rgba(255, 255, 255, 0.22); padding: 0.35rem 0.85rem 0.35rem 0.45rem; border-radius: 9999px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); margin-bottom: 0.85rem;">
+                    <img src="{{ asset('assets/media/branding/shapiro-hero-mascot.png') }}" alt="Shapiro The Hero" style="width: 24px; height: 24px; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));">
+                    <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff;">The Shapiro Shield &bull; Official Reel</span>
+                </div>
                 <div class="hero-reel-mockup">
                     <video src="{{ asset('assets/media/videos/shapiro-law-firm-reel.mp4') }}" poster="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" controls playsinline preload="metadata"></video>
-                    {{-- Floating Hero Shield Branding Overlay --}}
-                    <div style="position: absolute; top: 14px; left: 14px; z-index: 4; display: flex; align-items: center; gap: 0.5rem; background: rgba(11, 27, 61, 0.88); backdrop-filter: blur(8px); border: 1.5px solid rgba(255, 255, 255, 0.25); padding: 0.35rem 0.85rem 0.35rem 0.45rem; border-radius: 9999px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); pointer-events: none;">
-                        <img src="{{ asset('assets/media/branding/shapiro-hero-mascot.png') }}" alt="Shapiro The Hero" style="width: 26px; height: 26px; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));">
-                        <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff;">The Shapiro Shield</span>
-                    </div>
                 </div>
-                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 440px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.5rem; flex-wrap: wrap;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem; min-width: 0; flex-shrink: 1;">
-                        <span class="badge badge-gold" style="white-space: nowrap; flex-shrink: 0;">Official Video</span>
-                        <span style="font-size: 0.875rem; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Adam L. Shapiro in Action</span>
-                    </div>
-                    <span style="font-size: 0.75rem; color: #cbd5e1; white-space: nowrap; flex-shrink: 0; background: rgba(255,255,255,0.08); padding: 0.25rem 0.6rem; border-radius: 4px;">HD &bull; Full Audio</span>
+                <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 360px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.5rem;">
+                    <span class="badge badge-gold" style="white-space: nowrap; flex-shrink: 0;">Verified</span>
+                    <span style="font-size: 0.875rem; color: #cbd5e1; white-space: nowrap;">Adam L. Shapiro in Action</span>
                 </div>
             </div>
         </div>
@@ -294,8 +290,8 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.75rem;">
             {{-- Pillar 1 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <div class="card-icon-box card-icon-blue">
+                    <x-icon name="certificate" size="26" />
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Licenses and Memberships</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
@@ -309,8 +305,8 @@
 
             {{-- Pillar 2 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <div class="card-icon-box card-icon-red">
+                    <x-icon name="gavel" size="26" />
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">High Profile Cases</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
@@ -324,8 +320,8 @@
 
             {{-- Pillar 3 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <div class="card-icon-box card-icon-blue">
+                    <x-icon name="compass" size="26" />
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Philosophy</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
@@ -339,8 +335,8 @@
 
             {{-- Pillar 4 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <div class="card-icon-box card-icon-blue">
+                    <x-icon name="building" size="26" />
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Institutional Clients</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
@@ -354,8 +350,8 @@
 
             {{-- Pillar 5 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div class="card-icon-box card-icon-gold">
+                    <x-icon name="phone-call" size="26" />
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Always Accessible</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
@@ -369,8 +365,8 @@
 
             {{-- Pillar 6 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div class="card-icon-box card-icon-blue">
+                    <x-icon name="shield-check" size="26" />
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">Confidence</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
@@ -384,8 +380,8 @@
 
             {{-- Pillar 7 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <div class="card-icon-box card-icon-green">
+                    <x-icon name="dollar" size="26" />
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">No Recovery, No Attorney’s Fees!</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
@@ -399,8 +395,8 @@
 
             {{-- Pillar 8 --}}
             <div class="card" style="background: #ffffff; padding: 2rem 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(30, 58, 138, 0.08); border: 1px solid rgba(30, 58, 138, 0.12); color: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                <div class="card-icon-box card-icon-gold">
+                    <x-icon name="star" size="26" />
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); margin-bottom: 0.5rem; font-family: var(--font-heading);">References and Recommendations</h3>
                 <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted); margin-bottom: 1.25rem; flex-grow: 1;">
@@ -458,11 +454,11 @@
                 </div>
             </div>
 
-            <div style="display: flex; flex-direction: column; align-items: flex-end; width: 100%;">
-                <div style="width: 100%; max-width: 520px; border-radius: 24px; overflow: hidden; background: #000000; box-shadow: var(--shadow-xl); border: 2.5px solid rgba(0, 0, 0, 0.1); margin-left: auto;">
-                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" poster="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" controls playsinline preload="metadata" style="width: 100%; height: auto; display: block; border-radius: inherit;"></video>
+            <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <div class="hero-reel-mockup" style="border: 2.5px solid rgba(11, 27, 61, 0.2); box-shadow: var(--shadow-2xl);">
+                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" poster="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" controls playsinline preload="metadata"></video>
                 </div>
-                <p style="text-align: center; width: 100%; max-width: 520px; font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.85rem; font-weight: 600; margin-left: auto;">
+                <p style="text-align: center; width: 100%; max-width: 360px; font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.85rem; font-weight: 600;">
                     Watch: What to do immediately after an injury in NYC
                 </p>
             </div>
@@ -477,7 +473,7 @@
     <div class="container">
         <div class="responsive-two-col ratio-1-11" style="align-items: center; gap: 3.5rem;">
             <div>
-                <div class="champion-portrait-wrapper" style="box-shadow: 0 20px 40px rgba(0,0,0,0.5); max-width: 440px; margin: 0 auto; position: relative;">
+                <div class="champion-portrait-wrapper" style="box-shadow: 0 20px 40px rgba(0,0,0,0.5); max-width: 420px; margin: 0 auto; position: relative;">
                     <img src="{{ asset('assets/media/attorneys/adam-shapiro-portrait.png') }}" alt="Adam L. Shapiro, Esq." class="champion-portrait-img" style="height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 15%;">
                     {{-- Dual Identity Hero Badge --}}
                     <div style="position: absolute; bottom: 16px; right: 16px; background: rgba(11, 27, 61, 0.92); border: 1.5px solid rgba(214, 40, 40, 0.6); padding: 0.45rem 0.9rem; border-radius: 9999px; display: flex; align-items: center; gap: 0.6rem; backdrop-filter: blur(8px); box-shadow: 0 8px 24px rgba(0,0,0,0.6);">
@@ -603,7 +599,7 @@
 
             <div>
                 <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-2xl); border: 2px solid rgba(255,255,255,0.15);">
-                    <img src="{{ asset('assets/media/practice-areas/electric-bicycle-scooter-lawyer.jpg') }}" alt="Electric Scooter Accident Attorney" style="width: 100%; height: 420px; object-fit: cover; display: block;">
+                    <img src="{{ asset('assets/media/practice-areas/electric-bicycle-scooter-lawyer.jpg') }}" alt="Electric Scooter Accident Attorney" style="width: 100%; aspect-ratio: 16 / 11; max-height: 420px; height: auto; object-fit: cover; object-position: center center; display: block;">
                 </div>
             </div>
         </div>
@@ -1193,30 +1189,30 @@
 <section class="section" style="background: #0b1b3d; color: #ffffff; padding: 3rem 0; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
     <div class="container">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; text-align: center;">
-            <div style="padding: 1.75rem 1rem; border-radius: var(--radius-md); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(214, 40, 40, 0.18); border: 1px solid rgba(214, 40, 40, 0.35); color: #D62828; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div style="padding: 1.75rem 1rem; border-radius: var(--radius-md); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; align-items: center;">
+                <div class="card-icon-box card-icon-red card-icon-on-dark" style="margin: 0 auto 0.75rem;">
+                    <x-icon name="phone-call" size="24" />
                 </div>
                 <h3 style="font-size: 1.05rem; font-weight: 800; color: #ffffff; margin: 0; font-family: var(--font-heading);">Injured? Call Shapiro Now</h3>
             </div>
 
-            <div style="padding: 1.75rem 1rem; border-radius: var(--radius-md); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(214, 40, 40, 0.18); border: 1px solid rgba(214, 40, 40, 0.35); color: #D62828; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            <div style="padding: 1.75rem 1rem; border-radius: var(--radius-md); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; align-items: center;">
+                <div class="card-icon-box card-icon-red card-icon-on-dark" style="margin: 0 auto 0.75rem;">
+                    <x-icon name="file-check" size="24" />
                 </div>
                 <h3 style="font-size: 1.05rem; font-weight: 800; color: #ffffff; margin: 0; font-family: var(--font-heading);">Free Consultation Call Today</h3>
             </div>
 
-            <div style="padding: 1.75rem 1rem; border-radius: var(--radius-md); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(214, 40, 40, 0.18); border: 1px solid rgba(214, 40, 40, 0.35); color: #D62828; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <div style="padding: 1.75rem 1rem; border-radius: var(--radius-md); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; align-items: center;">
+                <div class="card-icon-box card-icon-red card-icon-on-dark" style="margin: 0 auto 0.75rem;">
+                    <x-icon name="dollar" size="24" />
                 </div>
                 <h3 style="font-size: 1.05rem; font-weight: 800; color: #ffffff; margin: 0; font-family: var(--font-heading);">No Win, No Fee</h3>
             </div>
 
-            <div style="padding: 1.75rem 1rem; border-radius: var(--radius-md); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(214, 40, 40, 0.18); border: 1px solid rgba(214, 40, 40, 0.35); color: #D62828; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45 1-1 1s-1-.45-1-1v-2.34c-1.8-1.04-3-2.98-3-5.16 0-3.31 2.69-6 6-6s6 2.69 6 6c0 2.18-1.2 4.12-3 5.16V17c0 .55-.45 1-1 1s-1-.45-1-1v-2.34"/></svg>
+            <div style="padding: 1.75rem 1rem; border-radius: var(--radius-md); background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; align-items: center;">
+                <div class="card-icon-box card-icon-red card-icon-on-dark" style="margin: 0 auto 0.75rem;">
+                    <x-icon name="trophy" size="24" />
                 </div>
                 <h3 style="font-size: 1.05rem; font-weight: 800; color: #ffffff; margin: 0; font-family: var(--font-heading);">We Fight, You Win</h3>
             </div>
@@ -1241,8 +1237,8 @@
 
                 <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2.5rem;">
                     <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; color: #fff; flex-shrink: 0;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <div class="card-icon-box-sm card-icon-blue" style="margin-bottom: 0;">
+                            <x-icon name="phone-call" size="20" />
                         </div>
                         <div>
                             <div style="font-size: 0.8125rem; color: var(--color-text-muted);">Direct Consultation Hotline</div>
@@ -1251,8 +1247,8 @@
                     </div>
 
                     <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--color-primary-blue); display: flex; align-items: center; justify-content: center; color: #fff; flex-shrink: 0;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <div class="card-icon-box-sm card-icon-blue" style="margin-bottom: 0;">
+                            <x-icon name="mail" size="20" />
                         </div>
                         <div>
                             <div style="font-size: 0.8125rem; color: var(--color-text-muted);">Direct Consultation Email</div>

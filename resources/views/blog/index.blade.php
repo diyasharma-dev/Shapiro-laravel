@@ -36,7 +36,7 @@
                 <div>
                     <div class="hero-media-card">
                         <img src="{{ asset('assets/media/practice-areas/personal-injury-banner.png') }}" alt="The Evidence Room - Legal Insights" loading="eager">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2.5rem 1.75rem 1.25rem; background: linear-gradient(to top, rgba(10,25,47,0.95) 0%, rgba(10,25,47,0.7) 50%, transparent 100%);">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(10,25,47,0.92) 0%, rgba(10,25,47,0.6) 60%, transparent 100%);">
                             <span class="badge badge-gold" style="margin-bottom: 0.5rem; display: inline-flex;">The Evidence Room</span>
                             <div style="color: #ffffff; font-weight: 800; font-size: 1.15rem;">New York Personal Injury &amp; Trial Law Insights</div>
                         </div>
