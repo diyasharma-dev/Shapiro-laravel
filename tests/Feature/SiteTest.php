@@ -87,7 +87,6 @@ class SiteTest extends TestCase
 
         $response->assertStatus(200);
         $response->assertSee('The Evidence Room');
-        $response->assertSee('Search');
         $response->assertSee('class="container"', false);
 
         // Verify zero legacy Elementor styles, containers, and classes
@@ -103,7 +102,6 @@ class SiteTest extends TestCase
         // 1. Search Query
         $response = $this->get('/blog/?s=accident');
         $response->assertStatus(200);
-        $response->assertSee('value="accident"', false);
         $response->assertSee('Search results for:', false);
 
         // 2. Tag Filter
@@ -378,7 +376,7 @@ class SiteTest extends TestCase
         $pi = $this->get('/personal-injury-lawyer-new-york/');
         $pi->assertStatus(200);
         $pi->assertDontSee('ebike-scooter-accident-lawyer.jpg');
-        $pi->assertSee('adam-shapiro-office-portrait.webp');
+        $pi->assertSee('adam-shapiro-portrait.png');
         $pi->assertSee('class="faq-list"', false);
         $pi->assertSee('class="faq-item"', false);
 

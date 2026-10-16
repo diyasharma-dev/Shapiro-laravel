@@ -141,16 +141,6 @@
                         </div>
                     </div>
 
-                    {{-- Google Maps Embed --}}
-                    <div class="card" style="padding: 0.5rem; overflow: hidden;">
-                        <iframe loading="lazy"
-                                src="https://maps.google.com/maps?q=Forest%20Hills%2C%20NY%20%2070-20%20Austin%20St%20Ste%20111&t=m&z=15&output=embed&iwloc=near"
-                                title="Forest Hills, NY 70-20 Austin St Ste 111"
-                                aria-label="Forest Hills, NY 70-20 Austin St Ste 111"
-                                style="width: 100%; height: 280px; border: 0; border-radius: var(--radius-md); display: block;"
-                                allowfullscreen=""></iframe>
-                    </div>
-
                 </div>
 
                 {{-- Right Column: Free Case Evaluation Form Card --}}
@@ -158,6 +148,34 @@
                     <x-contact-form />
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    {{-- Full Width Interactive Office Map --}}
+    <section style="background: var(--color-bg); padding: 0 0 4rem 0;">
+        <div class="container">
+            <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--color-border); background: #ffffff;">
+                <div style="display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 1.75rem; background: #0b1b3d; color: #ffffff; flex-wrap: wrap; gap: 1rem;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <span style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: #D62828; color: #ffffff;">
+                            <x-icon name="map-pin" size="18" />
+                        </span>
+                        <div>
+                            <h3 style="font-size: 1.15rem; font-weight: 800; margin: 0; color: #ffffff;">Forest Hills NYC Headquarters &bull; Interactive Map</h3>
+                            <p style="font-size: 0.85rem; color: #94a3b8; margin: 0;">70-20 Austin St, Suite 111, Forest Hills, NY 11375</p>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com/maps?q=Forest%20Hills%2C%20NY%20%2070-20%20Austin%20St%20Ste%20111" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white btn-sm" style="font-size: 0.85rem;">
+                        <span>Open in Google Maps &rarr;</span>
+                    </a>
+                </div>
+                <iframe loading="lazy"
+                        src="https://maps.google.com/maps?q=Forest%20Hills%2C%20NY%20%2070-20%20Austin%20St%20Ste%20111&t=m&z=15&output=embed&iwloc=near"
+                        title="Forest Hills, NY 70-20 Austin St Ste 111"
+                        aria-label="Forest Hills, NY 70-20 Austin St Ste 111"
+                        style="width: 100%; height: 450px; border: 0; display: block;"
+                        allowfullscreen=""></iframe>
             </div>
         </div>
     </section>

@@ -276,8 +276,8 @@
                 <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
                     He knows how insurance companies evaluate claims behind closed doors. He knows which arguments they use to minimize payouts and exactly when they make them. He knows when a low offer means they fear your case and when it means they think you will fold.
                 </p>
-                <div style="border-left: 3px solid var(--color-gold); padding-left: 1.25rem; margin-bottom: 1.5rem;">
-                    <p style="font-weight: 600; color: var(--color-primary); margin: 0;">
+                <div style="border-left: 3.5px solid var(--color-gold); padding-left: 1.25rem; margin-bottom: 1.5rem;">
+                    <p style="font-weight: 800; font-style: italic; color: var(--color-primary); margin: 0; font-size: 1.05rem; line-height: 1.6;">
                         "The first offer is almost never the right number. Adjusters are rewarded for paying as little as possible. We do not let that happen to you."
                     </p>
                 </div>
@@ -291,8 +291,8 @@
             </div>
 
             <div>
-                <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl);">
-                    <img src="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" alt="Adam Shapiro NYC Attorney" style="width: 100%; height: 380px; object-fit: cover;">
+                <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-xl); background: #0b1b3d;">
+                    <img src="{{ asset('assets/media/attorneys/adam-shapiro-portrait.png') }}" alt="Adam Shapiro NYC Attorney" style="width: 100%; height: 380px; object-fit: cover; object-position: center 20%; display: block;">
                 </div>
             </div>
         </div>
@@ -382,16 +382,7 @@
     </div>
 </section>
 
-{{-- Serving All Five Boroughs --}}
-<section class="section section-alt" style="text-align: center;">
-    <div class="container container-narrow">
-        <span class="section-subtitle">Jurisdictional Reach</span>
-        <h2 class="heading-lg" style="margin-bottom: 1.25rem;">We Serve All Five Boroughs and Beyond</h2>
-        <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 1.5rem;">
-            Whether you were injured in Queens (Forest Hills, Flushing, Jamaica, Astoria), Brooklyn, Manhattan, The Bronx, Staten Island, or Long Island, we come for the people responsible.
-        </p>
-    </div>
-</section>
+
 
 @include('partials.cases-we-handle')
 

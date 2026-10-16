@@ -77,7 +77,7 @@
 
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
                 <div class="hero-reel-mockup">
-                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" poster="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" controls playsinline preload="metadata"></video>
+                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}#t=0.001" poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata"></video>
                 </div>
                 <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 360px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.75rem;">
                     <div>

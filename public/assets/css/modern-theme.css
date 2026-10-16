@@ -979,6 +979,46 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: inherit;
 }
 
+.hero-video-play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(214, 40, 40, 0.92);
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.65), 0 0 25px rgba(214, 40, 40, 0.55);
+    transition: transform 0.25s ease, opacity 0.25s ease, background-color 0.2s ease;
+    cursor: pointer;
+    z-index: 5;
+    pointer-events: auto;
+}
+
+.hero-video-play-overlay.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.8);
+    pointer-events: none;
+}
+
+.hero-reel-mockup:hover .hero-video-play-overlay:not(.is-hidden) {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: #d62828;
+}
+
+.hero-video-play-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+}
+
 /* Full-bleed Hero Media Card for Practice & Inner Pages */
 .hero-media-card {
     position: relative;
@@ -1005,7 +1045,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-media-card img[src*="construction-accident"],
 .hero-media-card img[src*="injured-construction-worker"] {
-    object-position: center 12%;
+    object-position: center center;
 }
 
 .hero-media-card img[src*="medical-malpractice"] {

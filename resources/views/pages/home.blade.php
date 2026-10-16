@@ -57,12 +57,19 @@
 
             {{-- Right Column: Featured Video Reel --}}
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(11, 27, 61, 0.9); backdrop-filter: blur(8px); border: 1.5px solid rgba(255, 255, 255, 0.22); padding: 0.35rem 0.85rem 0.35rem 0.45rem; border-radius: 9999px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); margin-bottom: 0.85rem;">
-                    <img src="{{ asset('assets/media/branding/shapiro-hero-mascot.png') }}" alt="Shapiro The Hero" style="width: 24px; height: 24px; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));">
+                <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(11, 27, 61, 0.9); backdrop-filter: blur(8px); border: 1.5px solid rgba(255, 255, 255, 0.22); padding: 0.35rem 0.85rem 0.35rem 0.55rem; border-radius: 9999px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); margin-bottom: 0.85rem;">
+                    <span style="display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #D62828; color: #ffffff;">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    </span>
                     <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff;">The Shapiro Shield &bull; Official Reel</span>
                 </div>
-                <div class="hero-reel-mockup">
-                    <video src="{{ asset('assets/media/videos/shapiro-law-firm-reel.mp4') }}" poster="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" controls playsinline preload="metadata"></video>
+                <div class="hero-reel-mockup" id="hero-reel-container">
+                    <video id="hero-main-video" src="{{ asset('assets/media/videos/shapiro-law-firm-reel.mp4') }}#t=0.001" poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata"></video>
+                    <div class="hero-video-play-overlay" id="hero-video-play-btn" title="Click to Play Video">
+                        <div class="hero-video-play-icon">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        </div>
+                    </div>
                 </div>
                 <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 360px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.5rem;">
                     <span class="badge badge-gold" style="white-space: nowrap; flex-shrink: 0;">Verified</span>
@@ -456,7 +463,7 @@
 
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
                 <div class="hero-reel-mockup" style="border: 2.5px solid rgba(11, 27, 61, 0.2); box-shadow: var(--shadow-2xl);">
-                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" poster="{{ asset('assets/media/attorneys/adam-shapiro-office-portrait.webp') }}" controls playsinline preload="metadata"></video>
+                    <video src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}#t=0.001" poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata"></video>
                 </div>
                 <p style="text-align: center; width: 100%; max-width: 360px; font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.85rem; font-weight: 600;">
                     Watch: What to do immediately after an injury in NYC
@@ -477,7 +484,7 @@
                     <img src="{{ asset('assets/media/attorneys/adam-shapiro-portrait.png') }}" alt="Adam L. Shapiro, Esq." class="champion-portrait-img" style="height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 15%;">
                     {{-- Dual Identity Hero Badge --}}
                     <div style="position: absolute; bottom: 16px; right: 16px; background: rgba(11, 27, 61, 0.92); border: 1.5px solid rgba(214, 40, 40, 0.6); padding: 0.45rem 0.9rem; border-radius: 9999px; display: flex; align-items: center; gap: 0.6rem; backdrop-filter: blur(8px); box-shadow: 0 8px 24px rgba(0,0,0,0.6);">
-                        <img src="{{ asset('assets/media/branding/shapiro-hero-mascot.png') }}" alt="The Shapiro Hero" style="width: 30px; height: 30px; object-fit: contain;">
+                        <img src="{{ asset('assets/media/branding/shapiro-badge-round.png') }}" alt="The Shapiro Shield" style="width: 28px; height: 28px; object-fit: contain; background: #ffffff; border-radius: 50%; padding: 2px;">
                         <div style="text-align: left; line-height: 1.2;">
                             <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #ffffff; display: block; letter-spacing: 0.05em;">The Shapiro Shield</span>
                             <span style="font-size: 0.65rem; color: #fca5a5; font-weight: 600;">Two Sides. One Mission.</span>
@@ -1339,6 +1346,47 @@ document.addEventListener('DOMContentLoaded', function () {
             card.classList.remove('is-playing');
         });
     });
+
+    // Hero Main Video Controls (On/Off Play/Pause)
+    const heroVideo = document.getElementById('hero-main-video');
+    const heroPlayBtn = document.getElementById('hero-video-play-btn');
+
+    if (heroVideo && heroPlayBtn) {
+        heroPlayBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            if (heroVideo.paused) {
+                // Pause any other playing reels
+                cards.forEach(function (c) {
+                    const v = c.querySelector('video');
+                    if (v && !v.paused) {
+                        v.pause();
+                        c.classList.remove('is-playing');
+                    }
+                });
+
+                heroVideo.play().then(function () {
+                    heroPlayBtn.classList.add('is-hidden');
+                }).catch(function (err) {
+                    console.log('Hero video play error:', err);
+                });
+            } else {
+                heroVideo.pause();
+                heroPlayBtn.classList.remove('is-hidden');
+            }
+        });
+
+        heroVideo.addEventListener('play', function () {
+            heroPlayBtn.classList.add('is-hidden');
+        });
+
+        heroVideo.addEventListener('pause', function () {
+            heroPlayBtn.classList.remove('is-hidden');
+        });
+
+        heroVideo.addEventListener('ended', function () {
+            heroPlayBtn.classList.remove('is-hidden');
+        });
+    }
 
     // What Our Clients Say - Interactive Carousel Controls
     const clientTrack = document.getElementById('client-reviews-track');
