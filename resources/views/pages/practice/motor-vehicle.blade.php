@@ -31,8 +31,8 @@
             </div>
 
             <div>
-                <div class="hero-media-card">
-                    <img src="{{ asset('assets/media/practice-areas/motor-vehicle-accident-lawyer.jpg') }}" alt="Motor Vehicle Accident Lawyer NYC" loading="eager">
+                <div class="hero-media-card" style="border-radius: 24px; overflow: hidden;">
+                    <img src="{{ asset('assets/media/practice-areas/motor-vehicle-accident-lawyer.jpg') }}" alt="Motor Vehicle Accident Lawyer NYC" loading="eager" style="border-radius: 24px; width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -109,8 +109,8 @@
         <div class="grid grid-2" style="gap: 3.5rem; align-items: stretch; margin-bottom: 4rem;">
             {{-- Car Accident Case Valuation Card with Image --}}
             <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
-                <div style="aspect-ratio: 16/9; max-height: 240px; overflow: hidden; background: #0b1b3d;">
-                    <img src="{{ asset('assets/media/blog/police-accident-report-nyc.jpg') }}" alt="New York Car Accident Compensation & Settlement Valuation" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                <div style="aspect-ratio: 16/10; min-height: 320px; max-height: 380px; overflow: hidden; background: #0b1b3d;">
+                    <img src="{{ asset('assets/media/practice-areas/nyc-car-accident-valuation.jpg') }}" alt="New York Car Accident Compensation & Settlement Valuation" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                 </div>
                 <div style="padding: 2.25rem; display: flex; flex-direction: column; flex-grow: 1;">
                     <span class="badge badge-gold" style="margin-bottom: 1rem; align-self: flex-start;">Case Valuation</span>

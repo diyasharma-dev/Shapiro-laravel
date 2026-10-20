@@ -449,13 +449,13 @@
             </div>
 
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-                <div class="hero-reel-mockup" style="border: 2.5px solid rgba(11, 27, 61, 0.2); box-shadow: var(--shadow-2xl);">
-                    <video poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                <div class="hero-reel-mockup" style="border: 2.5px solid rgba(11, 27, 61, 0.2); box-shadow: var(--shadow-2xl); width: 100%; max-width: 400px; border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <video poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
                         <source src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
-                <p style="text-align: center; width: 100%; max-width: 360px; font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.85rem; font-weight: 600;">
+                <p style="text-align: center; width: 100%; max-width: 400px; font-size: 0.875rem; color: var(--color-text-muted); margin-top: 0.85rem; font-weight: 600;">
                     Watch: What to do immediately after an injury in NYC
                 </p>
             </div>

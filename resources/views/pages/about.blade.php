@@ -94,13 +94,13 @@
             </div>
 
             <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-                <div class="hero-reel-mockup">
-                    <video poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                <div class="hero-reel-mockup" style="max-width: 400px; border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <video poster="{{ asset('assets/media/attorneys/adam-shapiro-reel-cover.jpg') }}" controls playsinline preload="metadata" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 24px;">
                         <source src="{{ asset('assets/media/videos/hurt-in-accident-advice-short.mp4') }}" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
-                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 360px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.75rem;">
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 400px; margin-top: 0.875rem; padding: 0 0.5rem; gap: 0.75rem;">
                     <div>
                         <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--color-primary); margin: 0;">Adam L. Shapiro on Video</h4>
                         <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin: 0;">Advice if you are injured in an accident</p>

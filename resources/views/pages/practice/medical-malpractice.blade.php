@@ -37,8 +37,8 @@
             </div>
 
             <div>
-                <div class="hero-media-card">
-                    <img src="{{ asset('assets/media/practice-areas/medical-malpractice-attorney.png') }}" alt="Medical Malpractice Attorney NYC" loading="eager">
+                <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <img src="{{ asset('assets/media/practice-areas/medical-malpractice-attorney.png') }}" alt="Medical Malpractice Attorney NYC" loading="eager" style="border-radius: 24px;">
                 </div>
             </div>
         </div>
@@ -237,14 +237,22 @@
                 </ul>
             </div>
 
-            <div class="card" style="padding: 2.5rem; display: flex; flex-direction: column;">
-                <span class="badge badge-blue" style="margin-bottom: 1rem; align-self: flex-start;">CPLR § 3012-a</span>
-                <h3 class="heading-md" style="margin-bottom: 1rem;">What the Certificate of Merit Means for Your Case</h3>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
-                    New York requires a Certificate of Merit in every medical malpractice case, where an attorney confirms that a qualified medical professional has reviewed the case and found it has a reasonable basis.
+            <div class="card" style="padding: 2rem; display: flex; flex-direction: column;">
+                <div style="aspect-ratio: 16/10; min-height: 190px; max-height: 220px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 1.25rem; background: #0b1b3d; box-shadow: 0 4px 15px rgba(0,0,0,0.12); -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                    <img src="{{ asset('assets/media/practice-areas/nyc-medical-certificate-of-merit.jpg') }}" alt="Medical Expert Records Review for Certificate of Merit CPLR § 3012-a" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);">
+                </div>
+                <span class="badge badge-blue" style="margin-bottom: 0.75rem; align-self: flex-start;">CPLR § 3012-a</span>
+                <h3 class="heading-md" style="margin-bottom: 0.85rem;">What the Certificate of Merit Means for Your Case</h3>
+                <p style="color: var(--color-text-muted); line-height: 1.65; margin-bottom: 1rem; font-size: 0.95rem;">
+                    Under New York Civil Practice Law &amp; Rules § 3012-a, every medical malpractice complaint must be accompanied by a formal Certificate of Merit signed by your attorney.
                 </p>
-                <p style="color: var(--color-text-muted); line-height: 1.7; margin-top: auto;">
-                    This means we cannot file your case without first having a licensed physician in the relevant specialty review the records and confirm the standard of care was breached. We build that expert record from the first consultation. It is part of how we prepare every case.
+                <div style="background: #f8fafc; border-left: 3px solid #2563eb; padding: 0.85rem 1rem; border-radius: 6px; margin-bottom: 1rem;">
+                    <p style="margin: 0; font-size: 0.875rem; color: #1e293b; line-height: 1.55; font-weight: 500;">
+                        <strong>Mandatory Physician Review:</strong> We cannot file your lawsuit without first having a licensed, board-certified physician in the relevant medical specialty review your complete medical records and certify in writing that there is a reasonable basis for the malpractice action.
+                    </p>
+                </div>
+                <p style="color: var(--color-text-muted); line-height: 1.65; font-size: 0.95rem; margin-top: auto;">
+                    We retain premier medical experts early to examine imaging, diagnostic charts, and surgical logs. We build an ironclad expert evidentiary foundation from day one.
                 </p>
             </div>
 

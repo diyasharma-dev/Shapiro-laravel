@@ -40,8 +40,8 @@
                 </div>
 
                 <div>
-                    <div class="hero-media-card">
-                        <img src="{{ asset('assets/media/about/ny-law-office-heritage.jpg') }}" alt="Direct Mentorship with Trial Veteran Adam L. Shapiro" loading="eager">
+                    <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                        <img src="{{ asset('assets/media/about/ny-law-office-heritage.jpg') }}" alt="Direct Mentorship with Trial Veteran Adam L. Shapiro" loading="eager" style="border-radius: 24px;">
                         <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(10,25,47,0.92) 0%, rgba(10,25,47,0.6) 60%, transparent 100%);">
                             <span class="badge badge-gold" style="margin-bottom: 0.5rem; display: inline-flex;">Direct Mentorship</span>
                             <div style="color: #ffffff; font-weight: 800; font-size: 1.15rem;">Work Directly Alongside 30+ Year Trial Veteran Adam L. Shapiro</div>

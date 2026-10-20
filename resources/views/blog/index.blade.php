@@ -34,8 +34,8 @@
                 </div>
 
                 <div>
-                    <div class="hero-media-card">
-                        <img src="{{ asset('assets/media/blog/the-evidence-room-desk.jpg') }}" alt="New York Legal Strategy &amp; Trial Insights" loading="eager" style="object-position: center bottom;">
+                    <div class="hero-media-card" style="border-radius: 24px; overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(white, black); mask-image: radial-gradient(white, black);">
+                        <img src="{{ asset('assets/media/blog/the-evidence-room-desk.jpg') }}" alt="New York Legal Strategy &amp; Trial Insights" loading="eager" style="object-position: center bottom; border-radius: 24px;">
                         <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem 1.25rem 1rem; background: linear-gradient(to top, rgba(6,14,34,0.92) 0%, rgba(6,14,34,0.65) 60%, transparent 100%);">
                             <div style="color: #ffffff; font-weight: 800; font-size: 1.15rem;">New York Personal Injury &amp; Trial Law Insights</div>
                             <div style="color: #cbd5e1; font-size: 0.875rem; margin-top: 0.25rem;">Case Briefs, Trial Strategy &amp; Statutory Analysis</div>
