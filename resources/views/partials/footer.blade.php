@@ -137,7 +137,7 @@
                 
                 <div class="footer-contact-item">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                    <span>The Law Offices of Adam L. Shapiro &amp; Associates, P.C. maintains offices in New York City &amp; Long Island.<br><span style="color: #64748b;">70-20 Austin St Ste 111, Forest Hills, NY 11375</span></span>
+                    <span>The Law Offices of Adam L. Shapiro &amp; Associates, P.C.<br><span style="color: #cbd5e1; font-weight: 600;">Forest Hills, NY</span> &bull; <span style="color: #94a3b8;">70-20 Austin St Ste 111, Forest Hills, NY 11375</span></span>
                 </div>
 
                 <div class="footer-contact-item">

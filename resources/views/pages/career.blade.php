@@ -8,7 +8,7 @@
         <div class="container">
             <div class="hero-grid">
                 <div>
-                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.4); padding: 0.4rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.5rem;">
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(220, 38, 38, 0.15); border: 1px solid rgba(220, 38, 38, 0.4); padding: 0.4rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.5rem; width: fit-content; max-width: max-content; align-self: flex-start;">
                         <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #ef4444;"></span>
                         <span style="font-size: 0.8125rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: #fca5a5;">Join The Hero Team</span>
                     </div>
@@ -22,12 +22,12 @@
                         Become a part of the most dedicated personal injury and civil litigation law firm in New York. We are looking for relentless, disciplined, and compassionate legal advocates who want to make a genuine difference in injured victims' lives.
                     </p>
 
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 2rem;">
-                        <a href="#positions" class="btn btn-accent btn-lg">
+                    <div class="btn-action-row" style="margin-bottom: 2rem;">
+                        <a href="#positions" class="btn btn-accent">
                             <span>Explore Open Roles</span>
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
                         </a>
-                        <a href="mailto:adam@shapirolawoffice.com?subject=Career%20Inquiry%20-%20Shapiro%20Law" class="btn btn-outline-white btn-lg">
+                        <a href="mailto:adam@shapirolawoffice.com?subject=Career%20Inquiry%20-%20Shapiro%20Law" class="btn btn-outline-white">
                             <span>Submit Resume</span>
                         </a>
                     </div>

@@ -16,9 +16,9 @@
                 <p style="font-size: 1.125rem; line-height: 1.7; color: #cbd5e1; margin-bottom: 2rem;">
                     Thirty years. Both sides of the courtroom. Adam defended the insurance giants before he switched sides to fight for victims. Every case below is handled personally. You are never a file number here.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="#directory" class="btn btn-accent btn-lg">Explore Practice Areas</a>
-                    <a href="{{ route('contact') }}" class="btn btn-outline-white btn-lg">Free Consultation</a>
+                <div class="btn-action-row">
+                    <a href="#directory" class="btn btn-accent">Explore Practice Areas</a>
+                    <a href="{{ route('contact') }}" class="btn btn-outline-white">Free Consultation</a>
                 </div>
             </div>
 
